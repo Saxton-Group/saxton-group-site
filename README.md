@@ -18,9 +18,11 @@ The source repository is [Saxton-Group/saxton-group-site](https://github.com/Sax
 
 ### GitHub Pages review
 
-The `Publish review site to GitHub Pages` workflow publishes only the static files in `dist/`. Run it manually from the repository's Actions tab on `main` after enabling GitHub Pages with **GitHub Actions** as its source. Publication is manual so pushing a change does not automatically update the review site.
+The `Publish review site to GitHub Pages` workflow publishes only the static files in `dist/`. Run it manually from the repository's Actions tab on `main`. GitHub Pages uses **GitHub Actions** as its source. Publication is manual so pushing a change does not automatically update the review site.
 
-GitHub Pages is not enabled yet. The organization currently uses GitHub Free, which requires a public repository for Pages; the repository remains private pending the owner's visibility decision. A public Pages site is accessible to anyone, not only organization members.
+The repository and [GitHub Pages review site](https://saxton-group.github.io/saxton-group-site/) are public, as authorized by the owner. Anyone can view them, including people outside the organization.
+
+The repository history was cleaned of retired contact details before publication. Do not merge old history from the legacy Sites repository or private archive; transfer any needed changes as reviewed file edits to avoid restoring removed contact data.
 
 Asset references are relative so the page works both at a domain root and under a GitHub Pages project path.
 
