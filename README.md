@@ -10,7 +10,7 @@ Run `python3 -m http.server 4173 --directory dist` from this repository and visi
 
 Edit `dist/index.html` and `dist/styles.css`. Keep the page accessible and responsive, and verify internal links, contact links, and images before publishing. Keep authored files under `dist/` tracked. The firm name appears in the HTML title, metadata, header, and footer.
 
-The legacy site supplied Bruce Saxton's biography, the firm's founding year, client scope, and portrait. Contact details and contact links are temporarily omitted while new ones are established. Do not introduce unverified coach credentials, client names, or testimonials.
+The legacy site supplied Bruce Saxton's biography, the firm's founding year, client scope, and portrait. Bruce’s Ernst & Young Entrepreneur Of The Year award was confirmed by the site owner. Contact details and contact links are temporarily omitted while new ones are established. Do not introduce unverified coach credentials, client names, or testimonials.
 
 ## Hosting
 
