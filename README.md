@@ -16,6 +16,16 @@ The legacy site supplied Bruce Saxton's biography, the firm's founding year, cli
 
 The source repository is [Saxton-Group/saxton-group-site](https://github.com/Saxton-Group/saxton-group-site). The production branch is `main`.
 
+### GitHub Pages review
+
+The `Publish review site to GitHub Pages` workflow publishes only the static files in `dist/`. Run it manually from the repository's Actions tab on `main` after enabling GitHub Pages with **GitHub Actions** as its source. Publication is manual so pushing a change does not automatically update the review site.
+
+GitHub Pages is not enabled yet. The organization currently uses GitHub Free, which requires a public repository for Pages; the repository remains private pending the owner's visibility decision. A public Pages site is accessible to anyone, not only organization members.
+
+Asset references are relative so the page works both at a domain root and under a GitHub Pages project path.
+
+### Future production hosting
+
 The planned production workflow is GitHub → Cloudflare Pages. Connect this repository, select `main`, use no framework preset, and publish the `dist` directory. The site requires no build step. The Cloudflare connection and final domain are not configured yet.
 
 The existing private Sites publication remains a review copy. Its project identity is stored in `.openai/hosting.json`; that file is not needed by Cloudflare. The `origin` Git remote points to GitHub and the `sites` remote preserves the review site's source repository.
