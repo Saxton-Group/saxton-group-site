@@ -14,4 +14,10 @@ The legacy site supplied Bruce Saxton's biography, the firm's founding year, cli
 
 ## Hosting
 
-Sites hosts the static files in `dist/`. The project identity is stored in `.openai/hosting.json`. This is an independent repository and does not require the containing workspace.
+The source repository is [Saxton-Group/saxton-group-site](https://github.com/Saxton-Group/saxton-group-site). The production branch is `main`.
+
+The planned production workflow is GitHub → Cloudflare Pages. Connect this repository, select `main`, use no framework preset, and publish the `dist` directory. The site requires no build step. The Cloudflare connection and final domain are not configured yet.
+
+The existing private Sites publication remains a review copy. Its project identity is stored in `.openai/hosting.json`; that file is not needed by Cloudflare. The `origin` Git remote points to GitHub and the `sites` remote preserves the review site's source repository.
+
+This is an independent repository and does not require the containing workspace.
