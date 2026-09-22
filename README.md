@@ -14,6 +14,10 @@ The legacy site supplied Bruce Saxton's biography, the firm's founding year, cli
 
 Incoming biographies and photographs may be placed in `incoming/`, which is excluded from Git. Only reviewed public profile copy and selected portrait assets belong in `dist/`. Kristen Chin’s bio and portrait were supplied by the site owner. Additional team members use the reusable `consultant-profile` layout.
 
+### Portrait assets
+
+Serve 480px and 960px WebP derivatives through `srcset` and `sizes`; keep the source portraits in ignored `incoming/`. Portraits load eagerly at low fetch priority and decode asynchronously so they can be ready before readers reach the team section. When replacing a portrait, export with `cwebp -preset photo -q 82 -m 6 -sharp_yuv -resize WIDTH 0 SOURCE -o OUTPUT.webp` for each width, then inspect the result. Do not publish full-size PNG or JPEG originals.
+
 ## Hosting
 
 The source repository is [Saxton-Group/saxton-group-site](https://github.com/Saxton-Group/saxton-group-site). The production branch is `main`.
